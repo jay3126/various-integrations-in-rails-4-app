@@ -30,6 +30,13 @@ gem 'jbuilder', '~> 1.2'
 gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
 gem 'refinerycms', github: 'refinery/refinerycms', branch: "master"
 
+gem 'websocket-rails'
+
+gem "therubyracer"
+gem "less-rails"
+
+gem 'twitter-bootstrap-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
