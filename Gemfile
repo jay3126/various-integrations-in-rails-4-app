@@ -14,9 +14,10 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+gem 'execjs'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -32,9 +33,11 @@ gem 'jbuilder', '~> 1.2'
 gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
 gem 'refinerycms', github: 'refinery/refinerycms', branch: "master"
 
-gem 'websocket-rails'
+gem 'messaging', git: 'git://github.com/jay3126/rails-messaging-rails-4.git'
+gem 'mailboxer', git: 'git://github.com/ging/mailboxer.git'
+gem 'protected_attributes'
 
-gem "therubyracer"
+gem 'websocket-rails'
 gem "less-rails"
 
 gem 'twitter-bootstrap-rails'
