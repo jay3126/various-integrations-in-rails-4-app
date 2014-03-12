@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228144225) do
+ActiveRecord::Schema.define(version: 20140312055525) do
+
+  create_table "channel_users", force: true do |t|
+    t.integer  "channel_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "channels", force: true do |t|
+    t.text     "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "messages", force: true do |t|
+    t.integer  "user_id"
+    t.string   "channel_id"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_images", force: true do |t|
     t.string   "image_mime_type"
