@@ -18,6 +18,7 @@ gem 'execjs'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
+gem "acts-as-messageable"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140312055525) do
+ActiveRecord::Schema.define(version: 20140312113703) do
 
   create_table "channel_users", force: true do |t|
     t.integer  "channel_id"
@@ -33,6 +33,24 @@ ActiveRecord::Schema.define(version: 20140312055525) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "messaging_users", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "messaging_users", ["email"], name: "index_messaging_users_on_email", unique: true, using: :btree
+  add_index "messaging_users", ["reset_password_token"], name: "index_messaging_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "refinery_images", force: true do |t|
     t.string   "image_mime_type"
