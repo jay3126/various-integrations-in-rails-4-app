@@ -37,6 +37,7 @@ gem 'refinerycms', github: 'refinery/refinerycms', branch: "master"
 gem 'messaging', git: 'git://github.com/jay3126/rails-messaging-rails-4.git'
 gem 'mailboxer', git: 'git://github.com/ging/mailboxer.git'
 gem 'protected_attributes'
+gem 'sunspot_solr'
 
 gem 'websocket-rails'
 gem "less-rails"

@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the Rails application.
-MyCms::Application.initialize!
+VariousIntegrationsInRails4App::Application.initialize!

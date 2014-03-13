@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-MyCms::Application.load_tasks
+VariousIntegrationsInRails4App::Application.load_tasks

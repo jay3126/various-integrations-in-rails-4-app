@@ -1,4 +1,4 @@
-MyCms::Application.routes.draw do
+VariousIntegrationsInRails4App::Application.routes.draw do
 
   mount Messaging::Engine => "/messaging"
   devise_for :messaging_users
