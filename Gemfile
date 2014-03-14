@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.3'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -31,13 +31,17 @@ gem "thin"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
+gem 'refinerycms-i18n', git: 'git://github.com/jay3126/refinerycms-i18n-custom.git'
 gem 'refinerycms', github: 'refinery/refinerycms', branch: "master"
 
 gem 'messaging', git: 'git://github.com/jay3126/rails-messaging-rails-4.git'
 gem 'mailboxer', git: 'git://github.com/ging/mailboxer.git'
-gem 'protected_attributes'
+gem 'railties', git: 'git://github.com/jay3126/railties-4.0.3.git'
+gem 'protected_attributes', '~> 1.0.5'
 gem 'sunspot_solr'
+gem 'fat_free_crm', :git => 'git://github.com/jay3126/fat_free_crm_rails_4.git'
+gem 'rails-observers'
+gem "i18n", :git => 'git://github.com/jay3126/i18n-custom.git'
 
 gem 'websocket-rails'
 gem "less-rails"
