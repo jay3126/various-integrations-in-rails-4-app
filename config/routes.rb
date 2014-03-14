@@ -1,7 +1,6 @@
 VariousIntegrationsInRails4App::Application.routes.draw do
 
   mount Messaging::Engine => "/messaging"
-  devise_for :messaging_users
   resources :messages
 
   # This line mounts Refinery's routes at the root of your application.

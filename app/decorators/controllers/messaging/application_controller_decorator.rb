@@ -10,7 +10,7 @@ Messaging::ApplicationController.class_eval do
                 :from_dialog?,
                 :admin?,
                 :login?
-  before_filter  :find_pages_for_menu, :show_welcome_page?
+#  before_filter  :find_pages_for_menu, :show_welcome_page?
 
   skip_filter :authenticate_messaging_user!
   before_filter :login_required
